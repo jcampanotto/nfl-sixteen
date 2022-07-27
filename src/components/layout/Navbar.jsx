@@ -2,7 +2,7 @@ import {IoAmericanFootballOutline} from 'react-icons/io5'
 
 function Navbar() {
   return (
-    <div className="navbar bg-base-300">
+    <div className="navbar bg-base-300 shadow-lg">
       <div className="flex-1">
         <p className="btn btn-ghost text-xl">
         <IoAmericanFootballOutline className='mr-2'/> <span>NFL Sixteen</span>
