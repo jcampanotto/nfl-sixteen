@@ -4,7 +4,7 @@
 
 @media (min-width: 1120px) {
   .weekBubblesContainer {
-    /* Turns on week bubbles and turns off week dropdown */
+    /* Turns on week bubbles instead of dropdown */
     display: flex; 
   }
 
