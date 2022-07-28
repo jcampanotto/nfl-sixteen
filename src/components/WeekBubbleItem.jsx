@@ -4,12 +4,12 @@ function WeekBubbleItem({item}) {
 
   if (item.weekNum > currentWeek) {
     return (
-      <input key={item} type="radio" name="weekSelection" value={item.weekNum} data-title={`W${item.weekNum}`} className="btn btn-primary btn-sm mr-1 btn-ghost" />
+      <input key={item} type="radio" name="weekSelection" value={item.weekNum} data-title={`W${item.weekNum}`} className="btn btn-sm mr-1 btn-ghost" />
     )
   }
 
   return (
-    <input key={item} type="radio" name="weekSelection" value={item.weekNum} data-title={`W${item.weekNum}`} className="btn btn-sm mr-1" />
+    <input key={item} type="radio" name="weekSelection" value={item.weekNum} data-title={`W${item.weekNum}`} className="btn btn-accent btn-sm mr-1" />
   )
 
 }

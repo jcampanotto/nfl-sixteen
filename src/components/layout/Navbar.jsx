@@ -1,4 +1,5 @@
 import {IoAmericanFootballOutline} from 'react-icons/io5'
+import WeekBubbleList from '../WeekBubbleList'
 
 function Navbar() {
   return (
@@ -8,6 +9,9 @@ function Navbar() {
         <IoAmericanFootballOutline className='mr-2'/> <span>NFL Sixteen</span>
         </p>
       </div>
+
+      {/* Below is the week button selections */}
+      <WeekBubbleList/>
 
       {/* Below is the login photo / dropdown section */}
       <div className="flex-none gap-2 pr-5">
