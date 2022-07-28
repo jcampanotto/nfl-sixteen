@@ -2,9 +2,8 @@ import WeekData from './data/WeekData'
 import WeekBubbleItem from './WeekBubbleItem'
 
 function WeekBubbleList() {
-  console.log(WeekData)
   function changeWeek(event) {
-    console.log(event.target.value)
+    console.log(event.target.value) // TODO remove logs button clicked
   }
 
   return (
