@@ -1,7 +1,7 @@
 import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
-import WeekBubbles from "./components/WeekBubbles";
 import WeekDropdown from "./components/WeekDropdown";
+import WeekBubbleList from "./components/WeekBubbleList";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Navbar/>
       <main className='container mx-auto px-3 pb-12 h-full'>
         <WeekDropdown/>
-        <WeekBubbles/>
+        <WeekBubbleList/>
       </main>
       <Footer/>
     </div>
