@@ -18,7 +18,7 @@ function Navbar() {
             </div>
           </label>
           <ul tabIndex="0" className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-            <li className="btn">Logout</li>
+            <li className="btn btn-primary">Logout</li>
           </ul>
         </div>
       </div>
