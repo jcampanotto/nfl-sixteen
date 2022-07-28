@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (min-width: 1120px) {
+  .weekBubblesContainer {
+    /* Turns on week bubbles and turns off week dropdown */
+    display: flex; 
+  }
+
+  .weekDropdownContainer {
+    display: none;
+  }
+}
