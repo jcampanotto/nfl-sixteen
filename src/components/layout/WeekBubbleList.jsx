@@ -1,10 +1,7 @@
-import WeekData from './data/WeekData'
+import WeekData from '../data/WeekData'
 import WeekBubbleItem from './WeekBubbleItem'
 
-function WeekBubbleList() {
-  function changeWeek(event) {
-    console.log(event.target.value) // TODO remove logs button clicked
-  }
+function WeekBubbleList(props) {
 
   return (
     <>
@@ -12,9 +9,9 @@ function WeekBubbleList() {
     
     {/* WBubbles displayed at > 1120px */}
     <div className="weekBubblesContainer flex align-center justify-center container m-auto">
-      <div className="btn-group" onChange={changeWeek}>
+      <div className="btn-group" onChange={(e) => props.handleChangeWeek(e)}>
         {WeekData.map((item, i) => (
-          <WeekBubbleItem key={item.weekNum} item={item} />
+          <WeekBubbleItem key={item.weekNum} item={item} defaultWeek={props.defaultWeek} />
         ))}
       </div>
     </div>

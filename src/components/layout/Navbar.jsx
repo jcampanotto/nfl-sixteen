@@ -1,7 +1,7 @@
 import {IoAmericanFootballOutline} from 'react-icons/io5'
-import WeekBubbleList from '../WeekBubbleList'
+import WeekBubbleList from './WeekBubbleList'
 
-function Navbar() {
+function Navbar(props) {
   return (
     <div className="navbar bg-base-300 shadow-lg">
       <div className="flex-1">
@@ -11,7 +11,7 @@ function Navbar() {
       </div>
 
       {/* Below is the week button selections */}
-      <WeekBubbleList/>
+      <WeekBubbleList handleChangeWeek={props.handleChangeWeek} defaultWeek={props.defaultWeek}/>
 
       {/* Below is the login photo / dropdown section */}
       <div className="flex-none gap-2 pr-5">
