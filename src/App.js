@@ -1,6 +1,7 @@
 import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
 import {useState} from 'react'
+import MatchupList from "./components/MatchupList";
 
 function App() {
   const currentWeekFromAPI = 12; // obvi NYI
@@ -17,6 +18,7 @@ function App() {
       <Navbar handleChangeWeek={handleChangeWeek} defaultWeek={currentWeekFromAPI}/>
       <main className='container mx-auto px-3 pb-12 h-full'>
         <h1>{shownWeek}</h1>
+        <MatchupList/>
       </main>
       <Footer/>
     </div>
