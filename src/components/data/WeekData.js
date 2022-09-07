@@ -2,6 +2,8 @@ const WeekData = [
   {
     weekNum: 1,
     current: false,
+    winningTeams: [],
+    winningPlayer: "", // may change to an ID
   },
   {
     weekNum: 2,
