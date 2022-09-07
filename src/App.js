@@ -14,10 +14,9 @@ function App() {
 
   return (
     <>
-    <div className='flex flex-col justify-between h-screen'>
+    <div className='flex flex-col h-screen'>
       <Navbar handleChangeWeek={handleChangeWeek} defaultWeek={currentWeekFromAPI}/>
-      <main className='container mx-auto px-3 pb-12 h-full'>
-        <h1>{shownWeek}</h1>
+      <main className='h-full'>
         <MatchupList/>
       </main>
       <Footer/>
